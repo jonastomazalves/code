@@ -5,6 +5,7 @@
 <table>
   <tr>
     <th>Título</th>
+    <th>Álbum</th>
     <th></th>
     <th></th>
   </tr>
@@ -12,6 +13,7 @@
 <% @images.each do |image| %>
   <tr>
     <td><%= link_to image.title, image %></td>
+    <td><%= Album.find_by_id(image.album_id).titulo %><td>
     <td><%= link_to 'Editar', edit_image_path(image) %></td>
     <td><%= link_to 'Apagar', image, :confirm => 'Tem cereza?', :method => :delete %></td>
   </tr>

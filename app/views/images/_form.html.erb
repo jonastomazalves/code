@@ -16,6 +16,10 @@
     <%= f.text_field :title %>
   </div>
   <div class="field">
+    <%= f.label 'Álbum' %><br />
+    <%= f.collection_select(:album_id, Album.all, :id, :titulo) %>
+  </div>
+  <div class="field">
     <%= f.label 'Foto' %><br />
     <%= f.file_field :photo %>
   </div>

@@ -1,0 +1,23 @@
+<p>
+  <b>Título:</b>
+  <%= @album.titulo %>
+</p>
+
+<p>
+  <b>Descrição:</b>
+  <%= @album.descricao %>
+</p>
+
+<p>
+  <b>Data:</b>
+  <%= date_format(@album.data) %>
+</p>
+
+<p>
+  <b>Tipo:</b>
+  <%= @album.tipo %>
+</p>
+
+
+<%= link_to 'Editar', edit_album_path(@album) %> |
+<%= link_to 'Voltar', albums_path %>

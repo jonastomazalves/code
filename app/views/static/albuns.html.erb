@@ -1,0 +1,13 @@
+<% @albuns.each do |album| %>
+  <h1><%= link_to album.titulo, "imagens/"+album.id.to_s() %></h1>
+  
+  <p>
+    <%= album.descricao %>
+  </p>
+  
+  <p>
+    <em>Publicado em <%= date_format(album.data) %></em>
+  </p>
+
+  <br />
+<% end %>

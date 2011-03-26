@@ -1,0 +1,29 @@
+<%= form_for(@album) do |f| %>
+  <% if @album.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@album.errors.count, "erro") %> proíbem o álbum de ser salvo:</h2>
+
+      <ul>
+      <% @album.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label 'Título' %><br />
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="field">
+    <%= f.label 'Descrição' %><br />
+    <%= f.text_area :descricao %>
+  </div>
+  <div class="field">
+    <%= f.label 'Tipo' %><br />
+    <%= f.select('tipo', {"Gravura" => "Gravura", "Pintura" => "Pintura", "Desenho" => "Desenho", "Evento" => "Evento"}, {:include_blank => true}) %>
+  </div>
+  <div class="actions">
+    <%= f.submit submit_label %>
+  </div>
+<% end %>
