@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Texto:</b>
+  <%= @news.texto %>
+</p>
+
+<p>
+  <b>Data:</b>
+  <%= @news.data %>
+</p>
+
+
+<%= link_to 'Editar', edit_news_path(@news) %> |
+<%= link_to 'Voltar', :back %>

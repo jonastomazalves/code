@@ -1,0 +1,21 @@
+<%= form_for(@news) do |f| %>
+  <% if @news.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@news.errors.count, "erro") %> proíbem a notícia de ser salva:</h2>
+
+      <ul>
+      <% @news.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label 'Texto' %><br />
+    <%= f.text_area :texto %>
+  </div>
+  <div class="actions">
+    <%= f.submit submit_label %>
+  </div>
+<% end %>

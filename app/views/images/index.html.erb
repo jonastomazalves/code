@@ -1,0 +1,23 @@
+<h1>Imagens</h1>
+
+<table>
+  <tr>
+    <th>Título</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @images.each do |image| %>
+  <tr>
+    <td><%= image.title %></td>
+    <td><%= link_to 'Mostrar', image %></td>
+    <td><%= link_to 'Editar', edit_image_path(image) %></td>
+    <td><%= link_to 'Apagar', image, :confirm => 'Tem cereza?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Inserir Imagem', new_image_path %>
