@@ -1,9 +1,12 @@
-<% @news.each do |new| %>
+<% @news.each do |news| %>
+  <h1><%= news.titulo %></h1>
+
   <p>
-    <%= new.texto %>
+    <%= news.texto %>
   </p>
 
   <p>
-    <%= new.data %>
+    <em>Publicado em <%= date_format(news.data) %></em>
   </p>
+  <br />
 <% end %>

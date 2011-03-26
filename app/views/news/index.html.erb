@@ -1,19 +1,20 @@
 <h1>Notícias</h1>
 
+<p id="notice"><%= notice %></p>
+
 <table>
   <tr>
     <th>Texto</th>
     <th>Data</th>
     <th></th>
     <th></th>
-    <th></th>
   </tr>
 
 <% @news.each do |news| %>
   <tr>
-    <td><%= news.texto %></td>
-    <td><%= news.data %></td>
-    <td><%= link_to 'Mostrar', news %></td>
+    <td><%= link_to news.titulo, news %></td>
+    <td><%= news.texto[0..20]+"…" %></td>
+    <td><%= date_format(news.data) %></td>
     <td><%= link_to 'Editar', edit_news_path(news) %></td>
     <td><%= link_to 'Apagar', news, :confirm => 'Tem certeza?', :method => :delete %></td>
   </tr>

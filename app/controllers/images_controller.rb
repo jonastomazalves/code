@@ -44,7 +44,7 @@ class ImagesController < ApplicationController
 
     respond_to do |format|
       if @image.save
-        format.html { redirect_to(@image, :notice => 'Image was successfully created.') }
+        format.html { redirect_to(images_url, :notice => 'Imagem criada com sucesso.') }
         format.xml  { render :xml => @image, :status => :created, :location => @image }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class ImagesController < ApplicationController
 
     respond_to do |format|
       if @image.update_attributes(params[:image])
-        format.html { redirect_to(@image, :notice => 'Image was successfully updated.') }
+        format.html { redirect_to(images_url, :notice => 'Imagem atualizada com sucesso.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

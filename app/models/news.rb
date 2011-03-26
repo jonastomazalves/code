@@ -1,3 +1,3 @@
 class News < ActiveRecord::Base
-  validates_presence_of :texto, :message => "não pode estar em branco"
+  validates_presence_of :titulo, :texto, :message => "não pode estar em branco"
 end

@@ -1,9 +1,14 @@
-body { background-color: #fff; color: #333; }
+body { background-color: #fff; color: #fff; }
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size:   13px;
+  font-size: 16px;
   line-height: 18px;
+}
+
+body {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .9);
+  background-color: #e4f0f2;
 }
 
 pre {
@@ -12,20 +17,71 @@ pre {
   font-size: 11px;
 }
 
-ul {
+em {
+  font-size: 12px;
+}
+
+img {
+  -moz-box-shadow: 2px 2px 5px #000;
+  -webkit-box-shadow: 2px 2px 5px #000;
+}
+
+#menu {
+  font-size: 24px;
+  height: 50px;
+  color: #111;
+  margin-bottom: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  
+  border-top-right-radius: 1.5em;
+  -moz-border-radius-topright: 1.5em;
+  -webkit-border-top-right-radius: 1.5em;
+  
+  border-bottom-left-radius: 1.5em;
+  -moz-border-radius-bottomleft: 1.5em;
+  -webkit-border-bottom-left-radius: 1.5em;
+  
+  background-color: #e42735;
+  background-image: -moz-linear-gradient(top, #8dbfd9 0%, #63a7ca 100%);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#8dbfd9), to(#63a7ca));
+}
+
+#menu ul {
   list-style-type: none;
 }
 
-ul li {
+#menu ul li {
+  font-size: 28px;
   display: block;
+  float: left;
+  padding-right: 10px;
 }
 
 #content {
   margin: 0px auto 0px;
-  width: 450px;
+  width: 950px;
 }
 
-a { color: #000; text-decoration: none; }
+#container {
+  padding: 40px;
+  
+  min-height: 430px;
+  
+  border-top-right-radius: 2em;
+  -moz-border-radius-topright: 2em;
+  -webkit-border-top-right-radius: 2em;
+  
+  border-bottom-left-radius: 2em;
+  -moz-border-radius-bottomleft: 2em;
+  -webkit-border-bottom-left-radius: 2em;
+  
+  background-color: #1d8e4f;
+  background-image: -moz-linear-gradient(top, #38b870 0%, #178246 100%);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#38b870), to(#178246));
+}
+
+a { color: #FFFFFF; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 div.field, div.actions {
@@ -33,22 +89,28 @@ div.field, div.actions {
 }
 
 #notice {
-  color: green;
+  color: #333;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .0);
 }
 
 .field_with_errors {
   padding: 1px;
-  background-color: red;
+  background-color: #e42735;
   display: table;
 }
 
 #error_explanation {
   width: 450px;
-  border: 1px solid red;
+  border: 1px solid #e42735;
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
   background-color: #f0f0f0;
+}
+
+#error_explanation ul {
+  padding: 3px;
+  margin: 3px;
 }
 
 #error_explanation h2 {
@@ -63,6 +125,8 @@ div.field, div.actions {
 }
 
 #error_explanation ul li {
+  color: #333;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .0);
   font-size: 12px;
-  list-style: square;
+  list-style-type: none;
 }
