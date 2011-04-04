@@ -1,4 +1,4 @@
-Pintor::Application.routes.draw do
+Oscartes::Application.routes.draw do
   resources :user_sessions
 
   resources :users
