@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110326214909) do
+ActiveRecord::Schema.define(:version => 20110404011415) do
 
   create_table "albums", :force => true do |t|
     t.string   "titulo"
@@ -38,6 +38,22 @@ ActiveRecord::Schema.define(:version => 20110326214909) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "titulo"
+  end
+
+  create_table "user_sessions", :force => true do |t|
+    t.string   "username"
+    t.string   "password"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "username",          :null => false
+    t.string   "crypted_password",  :null => false
+    t.string   "password_salt",     :null => false
+    t.string   "persistence_token", :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

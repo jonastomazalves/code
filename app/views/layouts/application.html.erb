@@ -11,12 +11,22 @@
     
       <div id="menu">
         <ul>
-          <li><%= link_to 'Álbuns', '/albuns' %></li>
-          <li><%= link_to 'Notícias', '/noticias' %></li>
+          <% if current_user %>
+            <li><%= link_to 'Álbuns', '/albuns' %></li>
+            <li><%= link_to 'Notícias', '/noticias' %></li>
+            <li><%= link_to 'Usuário', edit_user_path(current_user) %></li>
+            <li><%= link_to 'Logout', '/logout' %></li>
+          <% else %>
+            <li><%= link_to 'Álbuns', '/albuns' %></li>
+            <li><%= link_to 'Notícias', '/noticias' %></li>
+          <% end %>
         </ul>
       </div>
 
       <div id="container">
+        <% if notice %>
+          <div id="notice"><%= notice %></div>
+        <% end %>
         <%= yield %>
       </div>
 

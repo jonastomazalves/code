@@ -1,4 +1,7 @@
 class AlbumsController < ApplicationController
+
+  before_filter :authentication
+
   # GET /albums
   # GET /albums.xml
   def index

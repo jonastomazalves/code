@@ -2,5 +2,7 @@
 db/*.sqlite3
 log/*.log
 tmp/
-#igonores uploaded test photos
+#ignores uploaded test photos
 public/system/photos/
+#ignores server jonaskey.pem
+jonaskey.pem
