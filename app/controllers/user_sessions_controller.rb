@@ -20,7 +20,7 @@ class UserSessionsController < ApplicationController
 
     respond_to do |format|
       if @user_session.save
-        format.html { redirect_to(root_url, :notice => 'User Logged in.') }
+        format.html { redirect_to('/albums', :notice => 'User Logged in.') }
         format.xml  { render :xml => @user_session, :status => :created, :location => @user_session }
       else
         format.html { render :action => "new" }

@@ -1,0 +1,7 @@
+<div id="slider">
+  <ul>
+    <% @imagens.each do |imagem| %>
+      <li><img alt=<%=imagem.title%> height="660" src="<%=imagem.photo.url%>">
+    <% end %>
+  </ul>
+</div>

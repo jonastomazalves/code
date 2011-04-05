@@ -1,0 +1,158 @@
+body { background-color: #ffffff; color: #000000; margin: 0px;}
+
+body, p, ol, ul, td {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+body {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .9);
+  background-color: #ffffff;
+}
+
+pre {
+  background-color: #eeeeee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+em {
+  font-size: 12px;
+}
+
+img {
+  -moz-box-shadow: 2px 2px 5px #000000;
+  -webkit-box-shadow: 2px 2px 5px #000000;
+}
+
+#upper {
+  margin: 0px auto 0px;
+  width: 810px;
+}
+
+#title p {
+  font-size: 72px;
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
+
+#blue { color: #3481cf }
+#green { color: #58cf34 }
+#yellow { color: #e0de37 }
+
+#menu {
+  font-size: 24px;
+  height: 50px;
+  color: #111;
+  margin-bottom: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+#menu ul {
+  padding: 0px;
+  list-style-type: none;
+}
+
+#menu ul li {
+  font-size: 28px;
+  display: block;
+  float: left;
+  margin-right: 20px;
+  width: 120px;
+  height: 30px;
+  padding-top: 15px;
+  text-align: center;
+  
+  background-color: #000;
+  background-image: -moz-linear-gradient(top, #000000 0%, #555555 100%);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000000), to(#555555));
+}
+
+#container {
+  margin: 0px auto 0px;
+  min-height: 530px;
+  background-color: #c4c4c4;
+}
+
+#nextBtn {
+  position: absolute;
+  font-size: 96px;
+  top: 500px;
+  margin-left: 960px;
+}
+
+#prevBtn {
+  position: absolute;
+  font-size: 96px;
+  top: 500px;
+  margin-left: -100px;
+}
+
+
+#content {
+  margin: 0px auto 0px;
+  width: 960px;
+  padding-top: 20px;
+  color: #000000;
+}
+
+#content h1, #content a {
+  color: #000000;
+}
+
+#footer {
+  margin: 0px auto 0px;
+  width: 810px;
+  color: #000000;
+  height: 100px;
+}
+
+a { color: #FFFFFF; text-decoration: none; }
+a:hover { text-decoration: none; }
+
+div.field, div.actions { margin-bottom: 10px; }
+
+#notice {
+  color: green;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .0);
+}
+
+.field_with_errors {
+  padding: 1px;
+  background-color: #e42735;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 1px solid #e42735;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation ul {
+  padding: 3px;
+  margin: 3px;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  color: #333;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .0);
+  font-size: 12px;
+  list-style-type: none;
+}

@@ -2,12 +2,21 @@
 <html>
   <head>
     <title>oscartes</title>
-    <%= stylesheet_link_tag :all %>
+    <% if current_user %>
+      <%= stylesheet_link_tag "admin" %>
+    <% else %>
+      <%= stylesheet_link_tag "site" %>
+    <% end %>
     <%= javascript_include_tag :defaults %>
+    <%= javascript_include_tag "jquery" %>
+    <%= javascript_include_tag "easySlider1.7" %>
     <%= csrf_meta_tag %>
   </head>
   <body>
-    <div id="content">
+    <div id="upper">
+      <div id="title">
+        <p><a href="/"><span id="blue">Osc</span><span id="green">ar</span><span id="yellow">tes</span></a></p>
+      </div>
     
       <div id="menu">
         <ul>
@@ -20,16 +29,25 @@
           <% else %>
             <li><%= link_to 'Álbuns', '/albuns' %></li>
             <li><%= link_to 'Notícias', '/noticias' %></li>
+            <li><%= link_to 'Links', '/links' %></li>
           <% end %>
         </ul>
       </div>
-
-      <div id="container">
+    </div>
+    
+    <div id="container">
+      
+      <div id="content">
         <% if notice %>
           <div id="notice"><%= notice %></div>
         <% end %>
         <%= yield %>
       </div>
+      
+    </div>
+    
+    <div id="footer">
+    </div>
 
   </body>
 </html>

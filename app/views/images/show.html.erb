@@ -1,11 +1,9 @@
 <p>
-  <b>Título:</b>
   <%= @image.title %>
 </p>
 
 <p>
-  <b>Foto:</b>
-  <%= image_tag @image.photo.url %>
+  <%= image_tag(@image.photo.url, :size => "640x400", :alt => @image.title) %>
 </p>
 
 

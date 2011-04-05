@@ -1,4 +1,14 @@
 class StaticController < ApplicationController
+ # GET /index
+  def index
+    @imagens = Image.find(:all, :order => 'rand()', :limit => 5)
+    
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @imagens }
+    end
+  end
+
   # GET /albuns
   def albuns
     @albuns = Album.all
@@ -29,18 +39,10 @@ class StaticController < ApplicationController
     end
   end
 
-
   # GET /links
   def links
     respond_to do |format|
       format.html # links.html.erb
-    end
-  end
-  
-  # GET /faq
-  def faq
-    respond_to do |format|
-      format.html # faq.html.erb
     end
   end
 end
