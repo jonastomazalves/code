@@ -1,8 +1,5 @@
 <% @imagens.each do |imagem| %>
   <h1><%= imagem.title %></h1>
-
-  <p>
-    <%= image_tag imagem.photo.url %>
-  </p>
+  <%= image_tag imagem.photo.url(:small) %>
   <br />
 <% end %>

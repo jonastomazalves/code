@@ -22,5 +22,8 @@ Oscartes::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+  
+  # Paperclip config to use ImageMagick
+  Paperclip.options[:command_path] = "DYLD_LIBRARY_PATH='/etc/imageMagick/ImageMagick-6.6.7/lib' /etc/imageMagick/ImageMagick-6.6.7/bin"
 end
 

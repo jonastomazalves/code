@@ -5,7 +5,7 @@ class Image < ActiveRecord::Base
   validates_attachment_size :photo, :less_than => 5.megabytes
   validates_attachment_content_type :photo, :content_type => ['image/jpeg', 'image/jpg', 'image/png', 'image/bmp']
   
-  has_attached_file :photo
+  has_attached_file :photo, :styles => {:small => "120x120>", :medium => "960x480#"}
   
   belongs_to :album
 end

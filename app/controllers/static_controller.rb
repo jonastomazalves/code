@@ -38,11 +38,4 @@ class StaticController < ApplicationController
       format.xml  { render :xml => @news }
     end
   end
-
-  # GET /links
-  def links
-    respond_to do |format|
-      format.html # links.html.erb
-    end
-  end
 end

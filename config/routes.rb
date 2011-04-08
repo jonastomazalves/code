@@ -69,10 +69,9 @@ Oscartes::Application.routes.draw do
   match 'logout' => 'user_sessions#destroy'
   
   match 'albuns' => 'static#albuns'
-  match 'imagens/:id' => 'static#imagens'
-  
   match 'noticias' => 'static#noticias'
   
-  match 'links' => 'static#links'
-  match 'faq' => 'static#faq'
+  match 'albuns/:id' => 'static#imagens'
+  match 'imagens/:id' => 'static#imagens'
+  
 end

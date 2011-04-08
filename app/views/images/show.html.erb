@@ -3,7 +3,7 @@
 </p>
 
 <p>
-  <%= image_tag(@image.photo.url, :size => "640x400", :alt => @image.title) %>
+  <%= image_tag @image.photo.url(:small) %>
 </p>
 
 
