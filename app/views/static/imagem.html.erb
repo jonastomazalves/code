@@ -1,0 +1,11 @@
+<h2><%= @imagem.title %></h2>
+
+<%= image_tag @imagem.photo.url(:medium) %>
+
+<p>
+  <em>Publicado em <%= date_format(@imagem.updated_at) %></em>
+</p>
+
+<br />
+
+<%= link_to 'voltar', :back %>

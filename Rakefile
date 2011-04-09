@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Pintor::Application.load_tasks
+Oscartes::Application.load_tasks

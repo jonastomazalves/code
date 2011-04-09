@@ -65,13 +65,22 @@ Oscartes::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
+  
+  # Login & Logout
   match 'login' => 'user_sessions#new'
   match 'logout' => 'user_sessions#destroy'
   
+  # Menu Links
   match 'albuns' => 'static#albuns'
   match 'noticias' => 'static#noticias'
   
+  # Images from a specific Album
   match 'albuns/:id' => 'static#imagens'
-  match 'imagens/:id' => 'static#imagens'
+  
+  # Specific News
+  match 'noticias/:id' => 'static#noticia'
+  
+  # Specific Image
+  match 'imagem/:id' => 'static#imagem'
   
 end

@@ -6,6 +6,9 @@
   <%= image_tag @image.photo.url(:small) %>
 </p>
 
+<p>
+  <em>Publicado em <%= date_format(@image.updated_at) %></em>
+</p>
 
 <%= link_to 'Editar', edit_image_path(@image) %> |
 <%= link_to 'Voltar', :back %>

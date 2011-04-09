@@ -1,5 +1,5 @@
 <% @albuns.each do |album| %>
-  <h1><%= link_to album.titulo, "imagens/"+album.id.to_s() %></h1>
+  <h1><%= link_to album.titulo, "albuns/"+album.id.to_s() %></h1>
   
   <p>
     <%= album.descricao %>

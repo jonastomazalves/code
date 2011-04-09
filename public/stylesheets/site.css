@@ -59,7 +59,7 @@ em {
   height: 30px;
   padding-top: 15px;
   text-align: center;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, .4);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, .3);
   
   -webkit-border-top-left-radius: 4px;
   -webkit-border-top-right-radius: 4px;
@@ -75,9 +75,11 @@ em {
 
 #container {
   margin: 0px auto 0px;
-  min-height: 540px;
+  height: 540px;
   background-color: #c4c4c4;
   background-image: url(../images/grey-bg.gif);
+  border-bottom: 1px solid #c4c4c4;
+  border-top: 1px solid #c4c4c4;
 }
 
 #nextBtn {
@@ -89,7 +91,7 @@ em {
   
   position: absolute;
   font-size: 96px;
-  top: 187px;
+  top: 188px;
   margin-left: 899px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 1.9);
 }
@@ -103,7 +105,7 @@ em {
   
   position: absolute;
   font-size: 96px;
-  top: 187px;
+  top: 188px;
   margin-left: 0px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 1.9);
 }
@@ -130,6 +132,24 @@ em {
   width: 960px;
   padding-top: 20px;
   color: #000000;
+}
+
+#news {
+  margin-top: 40px;
+  width: 960px;
+}
+
+.news {
+  width: 318px;
+  position: relative;
+  float: left;
+  font-size: 12px;
+}
+
+.news p {
+	 padding-left: 5px;
+  padding-right: 5px;
+  font-size: 13px;
 }
 
 #content h1, #content a { color: #000000; }

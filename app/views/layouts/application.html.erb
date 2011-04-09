@@ -15,7 +15,11 @@
   <body>
     <div id="upper">
       <div id="title">
-        <p><a href="/"><span id="blue">Osc</span><span id="green">ar</span><span id="yellow">tes</span></a></p>
+        <% if current_user %>
+          <p><span id="blue">Osc</span><span id="green">ar</span><span id="yellow">tes</span></p>
+        <% else %>
+          <p><a href="/"><span id="blue">Osc</span><span id="green">ar</span><span id="yellow">tes</span></a></p>
+        <% end %>
       </div>
     
       <div id="menu">

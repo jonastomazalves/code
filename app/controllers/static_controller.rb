@@ -2,10 +2,11 @@ class StaticController < ApplicationController
  # GET /index
   def index
     @imagens = Image.find(:all, :order => 'rand()', :limit => 5)
+    @noticias = News.find(:all, :order => 'updated_at DESC', :limit => 3)
     
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @imagens }
+      format.xml  { render :xml => {@imagens, @noticias}  }
     end
   end
 
@@ -29,12 +30,32 @@ class StaticController < ApplicationController
     end
   end
   
+  # GET /imagem
+  def imagem
+    @imagem = Image.find(params[:id])
+    
+    respond_to do |format|
+      format.html #imagem.html.erb
+      format.xml  { render :xml => @imagem }
+    end
+  end
+  
   # GET /noticias
   def noticias
     @news = News.all
 
     respond_to do |format|
       format.html # noticias.html.erb
+      format.xml  { render :xml => @news }
+    end
+  end
+  
+  # GET /noticia
+  def noticia
+    @news = News.find(params[:id])
+
+    respond_to do |format|
+      format.html # noticia.html.erb
       format.xml  { render :xml => @news }
     end
   end

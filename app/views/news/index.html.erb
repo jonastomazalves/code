@@ -11,7 +11,7 @@
 <% @news.each do |news| %>
   <tr>
     <td><%= link_to news.titulo, news %></td>
-    <td><%= news.texto[0..20]+"…" %></td>
+    <td><%= news.texto[0..20]+"..." %></td>
     <td><%= date_format(news.data) %></td>
     <td><%= link_to 'Editar', edit_news_path(news) %></td>
     <td><%= link_to 'Apagar', news, :confirm => 'Tem certeza?', :method => :delete %></td>

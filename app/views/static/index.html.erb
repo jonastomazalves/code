@@ -1,7 +1,28 @@
-<div id="slider">
-  <ul>
-    <% @imagens.each do |imagem| %>
-      <li><%= link_to image_tag(imagem.photo.url(:medium)), 'albuns/'+imagem.album_id.to_s() %></li>
-    <% end %>
-  </ul>
+<% if not current_user %>
+  <div id="slider">
+    <ul>
+      <% @imagens.each do |imagem| %>
+        <li><%= link_to image_tag(imagem.photo.url(:medium)), 'albuns/'+imagem.album_id.to_s() %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<div id="news">
+<% @noticias.each do |noticia| %>
+  <div class="news">
+    <h2><%= noticia.titulo %></h1>
+
+    <p>
+      <%= noticia.texto[0..144]+"..." %>
+      <br />
+      <br />
+      <%= link_to 'continuar lendo...', 'noticias/'+noticia.id.to_s() %>
+    </p>
+
+    <p>
+      <em>Publicado em <%= date_format(noticia.data) %></em>
+    </p>
+  </div>
+<% end %>
 </div>
