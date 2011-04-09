@@ -11,10 +11,10 @@
 <div id="news">
 <% @noticias.each do |noticia| %>
   <div class="news">
-    <h2><%= noticia.titulo %></h1>
+    <h2><%= noticia.titulo %></h2>
 
     <p>
-      <%= noticia.texto[0..144]+"..." %>
+      <%= noticia.texto[0..130]+"…" %>
       <br />
       <br />
       <%= link_to 'continuar lendo...', 'noticias/'+noticia.id.to_s() %>

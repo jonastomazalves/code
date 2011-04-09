@@ -1,7 +1,7 @@
 body { background-color: #fff; color: #fff; }
 
 body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: arial, helvetica, sans-serif;
   font-size: 16px;
   line-height: 18px;
 }
@@ -28,8 +28,9 @@ img {
 
 #title p {
   font-size: 72px;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 45px;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, .9);
 }
 
 #blue { color: #3481cf }
@@ -78,14 +79,14 @@ img {
 }
 
 a { color: #FFFFFF; text-decoration: none; }
-a:hover { text-decoration: underline; }
+a:hover { text-decoration: none; }
 
 div.field, div.actions {
   margin-bottom: 10px;
 }
 
 #notice {
-  color: #333;
+  color: green;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .0);
 }
 

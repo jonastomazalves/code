@@ -23,6 +23,10 @@
     <%= f.label 'Foto' %><br />
     <%= f.file_field :photo %>
   </div>
+  <div class="field">
+    <%= f.label 'Visivel na página inicial?' %><br />
+    <%= f.check_box :visivel %> Sim
+  </div>
   <div class="actions">
     <%= f.submit submit_label %>
   </div>
