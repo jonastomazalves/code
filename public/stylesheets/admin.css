@@ -7,7 +7,7 @@ body, p, ol, ul, td {
 }
 
 body {
-  text-shadow: 0 1px 1px rgba(0, 0, 0, .9);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
   background-color: #ffffff;
 }
 
@@ -30,7 +30,6 @@ img {
   font-size: 72px;
   margin-top: 45px;
   margin-bottom: 10px;
-  text-shadow: 0 2px 1px rgba(0, 0, 0, .9);
 }
 
 #blue { color: #3481cf }
@@ -71,19 +70,17 @@ img {
   padding: 40px;
   min-height: 530px;
   background-color: #c4c4c4;
-  text-shadow: 0 0px 0px rgba(0, 0, 0, .9);
+  background-image: -moz-linear-gradient(top, #fcfcfc 0%, #dddddd 100%);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fcfcfc), to(#dddddd));
+  border: 1px solid #cccccc;
+  border-top: 1px solid #efefef;
 }
 
-#container a {
-  color: #000000;
-}
-
+#container a { color: #000000; }
 a { color: #FFFFFF; text-decoration: none; }
 a:hover { text-decoration: none; }
 
-div.field, div.actions {
-  margin-bottom: 10px;
-}
+div.field, div.actions { margin-bottom: 10px; }
 
 #notice {
   color: green;
@@ -127,3 +124,12 @@ div.field, div.actions {
   font-size: 12px;
   list-style-type: none;
 }
+
+textarea {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 14px;
+  border: 1px solid #c4c4c4;
+  width: 450px;
+}
+input[type=text], select { height: 19px; width: 450px; border: 1px solid #c4c4c4; }
+input[type=submit]{ width: auto; }
