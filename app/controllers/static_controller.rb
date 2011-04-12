@@ -59,4 +59,14 @@ class StaticController < ApplicationController
       format.xml  { render :xml => @news }
     end
   end
+  
+  # GET /evento
+  def eventos
+    @albuns = Album.find_all_by_tipo("Evento")
+    
+    respond_to do |format|
+      format.html #eventos.html.erb
+      format.xml  { render :xml => @albuns }
+    end
+  end
 end

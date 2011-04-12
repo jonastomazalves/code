@@ -73,6 +73,7 @@ Oscartes::Application.routes.draw do
   # Menu Links
   match 'albuns' => 'static#albuns'
   match 'noticias' => 'static#noticias'
+  match 'eventos' => 'static#eventos'
   
   # Images from a specific Album
   match 'albuns/:id' => 'static#imagens'
