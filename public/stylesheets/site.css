@@ -128,7 +128,7 @@ em {
   padding: 0px;
 }
 
-#slider ul { padding-left: 2px; }
+#slider ul { padding-left: 0px; }
 
 #slider li {
   height: 490px;
@@ -190,6 +190,7 @@ div.field, div.actions { margin-bottom: 10px; }
 
 #notice {
   color: green;
+  padding-left: 70px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .0);
 }
 

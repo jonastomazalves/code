@@ -69,4 +69,10 @@ class StaticController < ApplicationController
       format.xml  { render :xml => @albuns }
     end
   end
+  
+  # carrega somente a página associada ao controller
+  # GET /convite
+  def convite
+    render :layout => nil
+  end
 end
