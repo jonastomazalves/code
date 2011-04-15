@@ -18,6 +18,14 @@
   <%= @album.tipo %>
 </p>
 
+<p>
+  <b>Imagens do Álbum:</b>
+  <br />
+  <% @images.each do |image| %>
+    <%= image_tag image.photo.url(:small) %>
+  <% end %>
+</p>
+
 
 <%= link_to 'Editar', edit_album_path(@album) %> |
 <%= link_to 'Voltar', albums_path %>

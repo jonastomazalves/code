@@ -1,7 +1,7 @@
 class StaticController < ApplicationController
  # GET /index
   def index
-    @imagens = Image.find(:all, :conditions => ["visivel <= ?", true], :order => 'rand()', :limit => 5)
+    @imagens = Image.find(:all, :conditions => ["visivel = ?", true], :order => 'rand()', :limit => 5)
     @noticias = News.find(:all, :order => 'updated_at DESC', :limit => 3)
     
     respond_to do |format|
