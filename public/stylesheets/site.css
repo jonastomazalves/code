@@ -112,11 +112,10 @@ em {
 }
 
 #nextBtn a, #prevBtn a {
+  line-height: 41px;
   padding-left: 7px;
   height: 37px;
   width: 37px;
-  vertical-align: bottom;
-  display: table-cell;
 } 
 
 #prevBtn { margin-left: 15px; }
