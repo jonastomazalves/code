@@ -1,5 +1,7 @@
+<%= javascript_include_tag 'pagination' %>
+
 <% @albuns.each do |album| %>
-  <h1><%= link_to album.titulo, "albuns/"+album.id.to_s() %></h1>
+  <h2><%= link_to album.titulo, "albuns/"+album.id.to_s() %></h2>
   
   <p>
     <%= album.descricao %>
@@ -8,6 +10,7 @@
   <p>
     <em>Publicado em <%= date_format(album.data) %></em>
   </p>
-
   <br />
 <% end %>
+
+<%= will_paginate @albuns %>

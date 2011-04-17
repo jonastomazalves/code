@@ -1,5 +1,7 @@
-<% @imagens.each do |imagem| %>
-  <h1><%= imagem.title %></h1>
-  <%= image_tag imagem.photo.url(:small) %>
-  <br />
-<% end %>
+<div id="slider">
+  <ul>
+    <% @imagens.each do |imagem| %>
+      <li><h2><%= imagem.title %></h2><%= image_tag(imagem.photo.url(:medium)) %></li>
+    <% end %>
+  </ul>
+</div>

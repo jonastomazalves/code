@@ -1,8 +1,13 @@
+<%= javascript_include_tag 'pagination' %>
+
 <% @news.each do |news| %>
-  <h1><%= news.titulo %></h1>
+  <h2><%= news.titulo %></h2>
 
   <p>
-    <%= news.texto %>
+    <%= news.texto[0..130]+"…" %>
+    <br />
+    <br />
+      <%= link_to 'continuar lendo...', 'noticias/'+news.id.to_s() %>
   </p>
 
   <p>
@@ -10,3 +15,5 @@
   </p>
   <br />
 <% end %>
+
+<%= will_paginate @news %>

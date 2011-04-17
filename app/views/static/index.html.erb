@@ -1,12 +1,10 @@
-<% if not current_user %>
-  <div id="slider">
-    <ul>
-      <% @imagens.each do |imagem| %>
-        <li><%= link_to image_tag(imagem.photo.url(:medium)), 'albuns/'+imagem.album_id.to_s() %></li>
-      <% end %>
-    </ul>
-  </div>
-<% end %>
+<div id="slider">
+  <ul>
+    <% @imagens.each do |imagem| %>
+      <li><%= link_to image_tag(imagem.photo.url(:medium)), 'albuns/'+imagem.album_id.to_s() %></li>
+    <% end %>
+  </ul>
+</div>
 
 <div id="news">
 <% @noticias.each do |noticia| %>

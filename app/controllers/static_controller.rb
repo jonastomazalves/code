@@ -12,7 +12,7 @@ class StaticController < ApplicationController
 
   # GET /albuns
   def albuns
-    @albuns = Album.all
+    @albuns = Album.paginate(:per_page => 3, :page => params[:page], :order => 'updated_at DESC')
     
     respond_to do |format|
       format.html # albuns.html.erb
@@ -42,7 +42,7 @@ class StaticController < ApplicationController
   
   # GET /noticias
   def noticias
-    @news = News.all
+    @news = News.paginate(:per_page => 3, :page => params[:page], :order => 'updated_at DESC')
 
     respond_to do |format|
       format.html # noticias.html.erb
@@ -62,7 +62,7 @@ class StaticController < ApplicationController
   
   # GET /evento
   def eventos
-    @albuns = Album.find_all_by_tipo("Evento")
+    @albuns = Album.find_all_by_tipo("Evento").paginate(:per_page => 3, :page => params[:page], :order => 'updated_at DESC')
     
     respond_to do |format|
       format.html #eventos.html.erb

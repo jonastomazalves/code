@@ -9,7 +9,9 @@ gem 'mysql2'
 
 gem "paperclip", "~> 2.3"
 
-gem 'authlogic'
+gem "authlogic"
+
+gem "will_paginate", "~> 3.0.pre2"
 
 # Use unicorn as the web server
 # gem 'unicorn'

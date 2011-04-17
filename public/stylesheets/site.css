@@ -1,7 +1,103 @@
+@font-face {
+    font-family: 'CabinRegular';
+    src: url('./fonts/Cabin-Regular-webfont.eot');
+    src: url('./fonts/Cabin-Regular-webfont.eot?#iefix') format('eot'),
+         url('./fonts/Cabin-Regular-webfont.woff') format('woff'),
+         url('./fonts/Cabin-Regular-webfont.ttf') format('truetype'),
+         url('./fonts/Cabin-Regular-webfont.svg#webfontBYmTbORQ') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CabinItalic';
+    src: url('./fonts/Cabin-Italic-webfont.eot');
+    src: url('./fonts/Cabin-Italic-webfont.eot?#iefix') format('eot'),
+         url('./fonts/Cabin-Italic-webfont.woff') format('woff'),
+         url('./fonts/Cabin-Italic-webfont.ttf') format('truetype'),
+         url('./fonts/Cabin-Italic-webfont.svg#webfontoEOlx1Fe') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CabinMedium';
+    src: url('./fonts/Cabin-Medium-webfont.eot');
+    src: url('./fonts/Cabin-Medium-webfont.eot?#iefix') format('eot'),
+         url('./fonts/Cabin-Medium-webfont.woff') format('woff'),
+         url('./fonts/Cabin-Medium-webfont.ttf') format('truetype'),
+         url('./fonts/Cabin-Medium-webfont.svg#webfontZjmzPr5n') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CabinMediumItalic';
+    src: url('./fonts/Cabin-MediumItalic-webfont.eot');
+    src: url('./fonts/Cabin-MediumItalic-webfont.eot?#iefix') format('eot'),
+         url('./fonts/Cabin-MediumItalic-webfont.woff') format('woff'),
+         url('./fonts/Cabin-MediumItalic-webfont.ttf') format('truetype'),
+         url('./fonts/Cabin-MediumItalic-webfont.svg#webfontScE3mmnx') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CabinSemiBold';
+    src: url('./fonts/Cabin-SemiBold-webfont.eot');
+    src: url('./fonts/Cabin-SemiBold-webfont.eot?#iefix') format('eot'),
+         url('./fonts/Cabin-SemiBold-webfont.woff') format('woff'),
+         url('./fonts/Cabin-SemiBold-webfont.ttf') format('truetype'),
+         url('./fonts/Cabin-SemiBold-webfont.svg#webfonteZogGz32') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CabinSemiBoldItalic';
+    src: url('./fonts/Cabin-SemiBoldItalic-webfont.eot');
+    src: url('./fonts/Cabin-SemiBoldItalic-webfont.eot?#iefix') format('eot'),
+         url('./fonts/Cabin-SemiBoldItalic-webfont.woff') format('woff'),
+         url('./fonts/Cabin-SemiBoldItalic-webfont.ttf') format('truetype'),
+         url('./fonts/Cabin-SemiBoldItalic-webfont.svg#webfontuuedSAqG') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CabinBold';
+    src: url('./fonts/Cabin-Bold-webfont.eot');
+    src: url('./fonts/Cabin-Bold-webfont.eot?#iefix') format('eot'),
+         url('./fonts/Cabin-Bold-webfont.woff') format('woff'),
+         url('./fonts/Cabin-Bold-webfont.ttf') format('truetype'),
+         url('./fonts/Cabin-Bold-webfont.svg#webfont2veyF8LL') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CabinBoldItalic';
+    src: url('./fonts/Cabin-BoldItalic-webfont.eot');
+    src: url('./fonts/Cabin-BoldItalic-webfont.eot?#iefix') format('eot'),
+         url('./fonts/Cabin-BoldItalic-webfont.woff') format('woff'),
+         url('./fonts/Cabin-BoldItalic-webfont.ttf') format('truetype'),
+         url('./fonts/Cabin-BoldItalic-webfont.svg#webfontbHepAcvL') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body { background-color: #ffffff; color: #000000; margin: 0px; }
 
 body, p, ol, ul, td {
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'CabinRegular', Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
 }
@@ -21,7 +117,8 @@ pre {
 }
 
 em {
-  font-size: 12px;
+  font-family: 'CabinItalic';
+  font-size: 14px;
 }
 
 #upper {
@@ -30,15 +127,15 @@ em {
 }
 
 #title p {
-  font-size: 72px;
+  font-size: 76px;
   margin-top: 40px;
-  margin-bottom: 10px;
-  text-shadow: 0 2px 1px rgba(0, 0, 0, .9);
+  margin-bottom: 5px;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, .7);
 }
 
-#blue { color: #3481cf }
-#green { color: #58cf34 }
-#yellow { color: #e0de37 }
+#blue { color: #3481cf; }
+#green { color: #58cf34; }
+#yellow { color: #e0de37; }
 
 #menu {
   font-size: 24px;
@@ -82,11 +179,14 @@ em {
   padding-left: 5px;
   min-height: 545px;
   width: 1030px;
+  
   background-color: #fcfcfc;
   background-image: -moz-linear-gradient(top, #fcfcfc 0%, #dddddd 100%);
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fcfcfc), to(#dddddd));
-  border: 1px solid #cccccc;
+  
+  border: 1px solid #d9d9d9;
   border-top: 1px solid #efefef;
+  border-bottom: 1px solid #cccccc;
 }
 
 #nextBtn, #prevBtn {
@@ -95,9 +195,6 @@ em {
   margin-left: 899px;
   height: 40px;
   width: 40px;
-  
-  font-family: arial, sans-serif;
-  font-size: 48px;
   
   -webkit-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -108,10 +205,14 @@ em {
   
   background-color: #000000;
   border: 1px solid #999999;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 1.9);
 }
 
 #nextBtn a, #prevBtn a {
+  font-family: Arial, sans-serif;
+  font-size: 48px;
+  
+  text-shadow: 0 3px 3px rgba(255, 255, 255, 0.3);
+
   line-height: 41px;
   padding-left: 7px;
   height: 37px;
@@ -133,6 +234,10 @@ em {
   height: 490px;
   width: 955px;
   list-style-type: none;
+}
+
+#slider h2{
+  margin-top: -15px;
 }
 
 #content {
@@ -234,3 +339,5 @@ div.field, div.actions { margin-bottom: 10px; }
 #login{
 	margin-left: 70px;
 }
+
+input[type=text], input[type=password], select { font-size: 14px; height: 19px; width: 250px; border: 1px solid #c4c4c4; }
