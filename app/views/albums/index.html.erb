@@ -17,7 +17,7 @@
     <td><%= date_format(album.data) %></td>
     <td><%= album.tipo %></td>
     <td><%= link_to 'Editar', edit_album_path(album) %></td>
-    <td><%= link_to 'Apagar', album, :confirm => 'Tem certeza?', :method => :delete %></td>
+    <td><%= link_to 'Apagar', album, :confirm => 'Tem certeza? Todas as imagens associadas a esse Álbum serão apagadas.', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
