@@ -4,6 +4,10 @@
   <h2><%= link_to album.titulo, "albuns/"+album.id.to_s() %></h2>
   
   <p>
+    <%= image_tag Album.find_last_image(album.id).photo.url(:small) %>
+  </p>
+  
+  <p>
     <%= album.descricao %>
   </p>
   

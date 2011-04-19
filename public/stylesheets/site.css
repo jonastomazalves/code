@@ -249,6 +249,12 @@ em {
   color: #000000;
 }
 
+#content p {
+  max-width: 660px;
+  line-height: 25px;
+  text-align: justify;
+}
+
 #news {
   margin-top: 15px;
   width: 998px;
@@ -294,7 +300,6 @@ div.field, div.actions { margin-bottom: 10px; }
 
 #notice {
   color: green;
-  padding-left: 70px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .0);
 }
 
@@ -334,10 +339,6 @@ div.field, div.actions { margin-bottom: 10px; }
   text-shadow: 0 1px 1px rgba(0, 0, 0, .0);
   font-size: 12px;
   list-style-type: none;
-}
-
-#login{
-	margin-left: 70px;
 }
 
 input[type=text], input[type=password], select { font-size: 14px; height: 19px; width: 250px; border: 1px solid #c4c4c4; }

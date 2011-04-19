@@ -122,6 +122,24 @@ img {
   -webkit-box-shadow: 2px 2px 5px #000;
 }
 
+table {
+  width: 900px;
+  border-collapse: collapse;
+  border: 1px solid #cccccc;
+}
+table th {
+  text-align: left;
+  background-color: #efefef;
+  padding: 5px;
+  border-bottom: 1px solid #cccccc;
+}
+table a:hover { text-decoration: underline; }
+table td {
+  border-top: 1px solid #efefef;
+  padding: 5px;
+}
+
+
 #title p {
   height: 30px;
   font-size: 72px;
@@ -171,9 +189,9 @@ img {
   padding: 40px;
   min-height: 530px;
   background-color: #c4c4c4;
-  background-image: -moz-linear-gradient(top, #fcfcfc 0%, #dddddd 100%);
-  background-image: -o-linear-gradient(top, #fcfcfc 0%, #dddddd 100%);
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fcfcfc), to(#dddddd));
+  background-image: -moz-linear-gradient(top, #fefefe 0%, #eeeeee 100%);
+  background-image: -o-linear-gradient(top, #fefefe 0%, #eeeeee 100%);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fefefe), to(#eeeeee));
   border: 1px solid #cccccc;
   border-top: 1px solid #efefef;
 }
