@@ -107,7 +107,7 @@ body {
 }
 
 img {
-  border: 1px solid #999999;
+  border: 1px solid #cccccc;
 }
 
 pre {
@@ -123,7 +123,7 @@ em {
 
 #upper {
   margin: 0px auto 0px;
-  width: 810px;
+  width: 960px;
 }
 
 #title {
@@ -145,6 +145,7 @@ em {
   margin-bottom: 10px;
   padding-top: 1px;
   padding-bottom: 1px;
+  padding-left: 3px;
 }
 
 #menu ul {
@@ -194,7 +195,7 @@ em {
 
 #nextBtn, #prevBtn {
   position: absolute;
-  top: 408px;
+  top: 400px;
   margin-left: 899px;
   height: 40px;
   width: 40px;
@@ -250,30 +251,26 @@ em {
 
 #news {
   margin-top: 15px;
-  width: 960px;
+  width: 998px;
 }
 
 .news {
   position: relative;
   float: left;
   margin-top: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 297px;
+  margin-right: 42px;
+  width: 290px;
   height: 230px;
 }
 
 .news h2 {
-  margin-left: 5px;
   padding-bottom: 5px;
   border-bottom: 1px solid #c4c4c4;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
-  width: 290px;
+  width: 295px;
 }
 
 .news p {
-  padding-left: 5px;
-  padding-right: 5px;
   font-size: 14px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
   text-align: justify;
