@@ -180,9 +180,9 @@ em {
   width: 1030px;
   
   background-color: #FCFCFC;
-  background-image: -moz-linear-gradient(top, #FCFCFC 0%, #DDDDDD 100%);
-  background-image: -o-linear-gradient(top, #FCFCFC 0%, #DDDDDD 100%);
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FCFCFC), to(#DDDDDD));
+  background-image: -moz-linear-gradient(top, #FCFCFC 0%, #ECECEC 100%);
+  background-image: -o-linear-gradient(top, #FCFCFC 0%, #ECECEC 100%);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FCFCFC), to(#ECECEC));
   
   border: 1px solid #DADADA;
   border-top: 1px solid #EFEFEF;
@@ -191,16 +191,16 @@ em {
 
 #nextBtn, #prevBtn {
   position: absolute;
-  top: 175px;
-  margin-left: 914px;
+  top: 174px;
+  margin-left: 955px;
   padding-top: 225px;
-  height: 255px;
+  height: 256px;
   width: 40px;
   
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
-  background: rgba(0, 0, 0, 0.65);
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=66)";
+  background: rgba(0, 0, 0, 0.66);
   
-  border-left: 1px solid #000000;
+  border-left: 1px solid #333333;
 }
 
 #nextBtn a, #prevBtn a {
@@ -212,10 +212,10 @@ em {
   font-size: 48px;
   line-height: 41px;
   
-  text-shadow: 0 1px 4px rgba(255, 255, 255, 1.5);
+  text-shadow: 0 1px 4px rgba(255, 255, 255, 1.0);
 } 
 
-#prevBtn { margin-left: 1px; border-right: 1px solid #000000; }
+#prevBtn { margin-left: -41px; border-right: 1px solid #333333; }
 #prevBtn a { padding-left: 5px; }
 
 #slider {
@@ -224,13 +224,27 @@ em {
   padding: 0px;
 }
 
-#slider h2{ margin-top: -15px; }
 #slider ul { padding-left: 0px; }
 
 #slider li {
   height: 490px;
   width: 955px;
   list-style-type: none;
+}
+
+#slider h2 {
+  position: relative;
+  height: 45px;
+  width: 954px;
+  color: #FFFFFF;
+  padding: 0px;
+  padding-top: 25px;
+  margin: 0px;
+  margin-left: 1px;
+  bottom: 74px;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  background: rgba(0, 0, 0, 0.50);
+	
 }
 
 #content {
@@ -251,45 +265,39 @@ em {
 #nextBtn a, #prevBtn a { color: #FFFFFF; }
 
 #news {
-  margin-top: 15px;
   width: 998px;
+  height: 240px;
 }
 
 .news {
   position: relative;
   float: left;
-  margin-top: 30px;
+  margin-top: 15px;
   margin-right: 42px;
   width: 290px;
   height: 230px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .news h2 {
   padding-bottom: 5px;
   border-bottom: 1px solid #C4C4C4;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   width: 295px;
 }
 
 .news p {
-  font-size: 14px;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   text-align: justify;
 }
 
 #footer {
-  margin: 0px auto 0px;
-  height: 65px;
+  height: 60px;
   width: 960px;
-  position: relative;
-  margin-top: 230px;
-  padding-top: 5px;
+  margin: 25px auto 0px;
   color: #000000;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  border-top: 1px solid #c4c4c4;
+  
 }
-
-#footer p { font-size: 12px; line-height: 0px; }
+#footer p { font-size: 12px; margin: 0px;}
 #footer a { color: #000000; }
 
 #notice {

@@ -1,7 +1,10 @@
 <div id="slider">
   <ul>
     <% @imagens.each do |imagem| %>
-      <li><h2><%= imagem.title %></h2><%= image_tag(imagem.photo.url(:medium)) %></li>
+      <li>
+        <%= image_tag(imagem.photo.url(:medium)) %>
+        <h2><%= imagem.title %></h2>
+      </li>
     <% end %>
   </ul>
 </div>

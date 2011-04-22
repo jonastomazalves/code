@@ -39,7 +39,7 @@ $(document).ready(function(){
 		$('#prevBtn').hide();
 		$('#nextBtn').hide();
 	
-		$("#content").bind("mouseenter mouseleave", function(e) {
+		$("#container").bind("mouseenter mouseleave", function(e) {
     		$('#prevBtn').toggle(100);
 			$('#nextBtn').toggle(100);
 		});
