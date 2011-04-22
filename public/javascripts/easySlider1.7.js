@@ -27,9 +27,26 @@
  *
  */
  
+//carrega o agente identificador de browser e seus atributos
+	var agent = navigator.userAgent.toLowerCase();
+	var is_iphone = ((agent.indexOf('iphone')!=-1));
+	var head = document.getElementsByTagName('head')[0];
+ 
 $(document).ready(function(){	
 	$("#slider").easySlider({});
+	
+	if(!is_iphone){
+		$('#prevBtn').hide();
+		$('#nextBtn').hide();
+	
+		$("#content").bind("mouseenter mouseleave", function(e) {
+    		$('#prevBtn').toggle(100);
+			$('#nextBtn').toggle(100);
+		});
+	}
 });
+
+
 
 (function($) {
 
@@ -52,10 +69,10 @@ $(document).ready(function(){
 			lastText: 		'Last',
 			lastShow:		false,				
 			vertical:		false,
-			speed: 			1000,
-			auto:			false,
+			speed: 			750,
+			auto:			true,
 			pause:			5000,
-			continuous:		false, 
+			continuous:		true, 
 			numeric: 		false,
 			numericId: 		'controls'
 		}; 
