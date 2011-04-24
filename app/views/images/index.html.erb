@@ -17,7 +17,7 @@
     <td><%= date_format(image.updated_at) %></td>
     <td><%= visivel_no_site(image.visivel) %></td>
     <td><%= link_to 'Editar', edit_image_path(image) %></td>
-    <td><%= link_to 'Apagar', image, :confirm => 'Tem cereza?', :method => :delete %></td>
+    <td><%= link_to 'Apagar', image, :confirm => 'Tem certeza?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
