@@ -2,7 +2,7 @@
   <ul>
     <% @imagens.each do |imagem| %>
       <li>
-        <%= image_tag(imagem.photo.url(:medium)) %>
+        <%= link_to image_tag(imagem.photo.url(:medium)), imagem.photo.url(), :class => "thickbox" %>
         <h2><%= imagem.title %></h2>
       </li>
     <% end %>
