@@ -4,7 +4,7 @@ class Album < ActiveRecord::Base
   has_many :images, :dependent => :destroy
   
   # Selects the last updated image on the current album
-  def self.find_last_image id
-    Image.find_all_by_album_id(id, :order => 'updated_at DESC', :limit => 1).first
+  def self.find_one_image(id)
+    Image.find_by_album_id(id).photo.url(:small)
   end
 end

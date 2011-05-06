@@ -12,7 +12,7 @@ class StaticController < ApplicationController
 
   # GET /albuns
   def albuns
-    @albuns = Album.paginate(:per_page => 3, :page => params[:page], :order => 'updated_at DESC')
+    @albuns = Album.find(:all, :include => :images, :conditions => "images.album_id IS NOT NULL").paginate(:per_page => 3, :page => params[:page], :order => 'updated_at DESC')
     
     respond_to do |format|
       format.html # albuns.html.erb
