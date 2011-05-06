@@ -1,7 +1,7 @@
 <%= javascript_include_tag 'pagination' %>
 
 <% @news.each do |news| %>
-  <h2><%= news.titulo %></h2>
+  <h2><%= link_to news.titulo, 'noticias/'+news.id.to_s() %></h2>
 
   <p>
     <%= news.texto[0..130]+"…" %>
