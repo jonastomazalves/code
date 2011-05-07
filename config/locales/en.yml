@@ -1,5 +1,36 @@
 # Sample localization file for English. Add more files in this directory for other locales.
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
-en:
-  hello: "Hello world"
+en: 
+  activerecord:
+    attributes:
+      user:
+        password: Senha
+        username: Login
+      album:
+        descricao: Descrição
+      image:
+        title: Título
+        photo_file_name: Arquivo
+      news:
+        titulo: Título
+      
+  authlogic:
+    error_messages:
+      login_blank: não pode estar em branco
+      login_not_found: inválido
+      login_invalid: inválido. Use somente letras, numeros, espaço, . - _ @
+      consecutive_failed_logins_limit_exceeded: Máximo de tentativas de Logins consecutivas com erro. Conta desativada
+      email_invalid: deve estar em um formato de e-mail
+      password_blank: não pode estar em branco
+      password_invalid: inválida
+      not_active: Conta não ativada
+      not_confirmed: Conta não confirmada
+      not_approved: Conta não aprovada.
+      no_authentication_details: Você não preencheu nenhum campo
+    attributes:
+      user_session:
+        username: Login
+        email: E-mail
+        password: Senha
+        remember_me: Lembrar-me

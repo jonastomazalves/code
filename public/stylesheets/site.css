@@ -350,7 +350,7 @@ a:hover { text-decoration: none; }
 div.field, div.actions { margin-bottom: 10px; }
 
 .field_with_errors {
-  padding: 1px;
+  padding: 0px;
   background-color: #e42735;
   display: table;
 }
@@ -361,6 +361,7 @@ div.field, div.actions { margin-bottom: 10px; }
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
+  text-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
   background-color: #f0f0f0;
 }
 

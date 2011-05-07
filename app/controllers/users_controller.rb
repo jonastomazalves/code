@@ -14,7 +14,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.update_attributes(params[:user])
-        format.html { redirect_to(root_url, :notice => 'Usuário alterado.') }
+        format.html { redirect_to(albums_url, :notice => 'Usuário alterado.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
