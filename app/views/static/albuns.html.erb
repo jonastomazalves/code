@@ -1,5 +1,3 @@
-<%= javascript_include_tag 'pagination' %>
-
 <% @albuns.each do |album| %>
   <h2><%= link_to album.titulo, "albuns/"+album.id.to_s() %></h2>
   
@@ -17,4 +15,4 @@
   <br />
 <% end %>
 
-<%= will_paginate @albuns %>
+<%= will_paginate @albuns, :prev_label => "&laquo; Anterior", :next_label => "Próxima &raquo;" %>

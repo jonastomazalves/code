@@ -1,5 +1,3 @@
-<%= javascript_include_tag 'pagination' %>
-
 <% @news.each do |news| %>
   <h2><%= link_to news.titulo, 'noticias/'+news.id.to_s() %></h2>
 
@@ -15,4 +13,4 @@
   </p>
 <% end %>
 
-<%= will_paginate @news %>
+<%= will_paginate @news, :prev_label => "&laquo; Anterior", :next_label => "Próxima &raquo;" %>
