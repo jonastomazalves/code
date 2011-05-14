@@ -2,7 +2,7 @@
   <h2><%= link_to album.titulo, "albuns/"+album.id.to_s() %></h2>
   
   <p>
-    <%= image_tag Album.find_one_image(album.id) %>
+    <%= link_to(image_tag(Album.find_one_image(album.id)), "albuns/"+album.id.to_s()) %>
   </p>
   
   <p>
@@ -12,7 +12,7 @@
   <p>
     <em>Publicado em <%= date_format(album.data) %></em>
   </p>
-  <br />
+  <%= tag :hr unless album == @albuns.last %>
 <% end %>
 
 <%= will_paginate @albuns, :prev_label => "&laquo; Anterior", :next_label => "Próxima &raquo;" %>

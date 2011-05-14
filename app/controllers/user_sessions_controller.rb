@@ -6,11 +6,6 @@ class UserSessionsController < ApplicationController
   # GET /user_sessions/new.xml
   def new
     @user_session = UserSession.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @user_session }
-    end
   end
 
   # POST /user_sessions
@@ -20,7 +15,7 @@ class UserSessionsController < ApplicationController
 
     respond_to do |format|
       if @user_session.save
-        format.html { redirect_to('/albums', :notice => 'Usuário logado.') }
+        format.html { redirect_to(albums_path, :notice => 'Usuário logado.') }
         format.xml  { render :xml => @user_session, :status => :created, :location => @user_session }
       else
         format.html { render :action => "new" }
@@ -36,7 +31,7 @@ class UserSessionsController < ApplicationController
     @user_session.destroy
 
     respond_to do |format|
-      format.html { redirect_to('/login', :notice => 'Usuário deslogado.') }
+      format.html { redirect_to(login_path, :notice => 'Usuário deslogado.') }
       format.xml  { head :ok }
     end
   end

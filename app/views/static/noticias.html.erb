@@ -3,14 +3,12 @@
 
   <p>
     <%= auto_link simple_format news.texto[0..130]+"…" %>
-    <br />
-    <br />
-      <%= link_to 'continuar lendo...', 'noticias/'+news.id.to_s() %>
+    <%= link_to 'continuar lendo...', 'noticias/'+news.id.to_s() %>
   </p>
-
   <p>
     <em>Publicado em <%= date_format(news.data) %></em>
   </p>
+  <%= tag :hr unless news == @news.last %>
 <% end %>
 
 <%= will_paginate @news, :prev_label => "&laquo; Anterior", :next_label => "Próxima &raquo;" %>

@@ -278,13 +278,14 @@ em {
 
 a { color: #FFFFFF; text-decoration: none; }
 a:hover { text-decoration: none; }
+hr { border: 0px; border-top: 1px solid #DADADA; border-bottom: 1px solid #F9F9F9; height: 0px; }
 
 div.field, div.actions { margin-bottom: 10px; }
 
 .field_with_errors {
-  padding: 0px;
+  width: 254px;
+  padding: 1px;
   background-color: #e42735;
-  display: table;
 }
 
 #error_explanation {

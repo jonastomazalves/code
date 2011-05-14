@@ -8,7 +8,7 @@
   <p>
     <em>Publicado em <%= date_format(album.data) %></em>
   </p>
-  <br />
+  <%= tag :hr unless album == @albuns.last %>
 <% end %>
 
 <%= will_paginate @albuns, :prev_label => "&laquo; Anterior", :next_label => "Próxima &raquo;" %>
