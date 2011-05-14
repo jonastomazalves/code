@@ -15,7 +15,7 @@
     <h2><%= link_to noticia.titulo, 'noticias/'+noticia.id.to_s() %></h2>
 
     <p>
-      <%= noticia.texto[0..130]+"…" %>
+      <%= auto_link noticia.texto[0..130]+"…" %>
       <br />
       <br />
       <%= link_to 'continuar lendo...', 'noticias/'+noticia.id.to_s() %>
