@@ -237,6 +237,7 @@ em {
 }
 
 .news {
+  overflow: hidden;
   position: relative;
   float: left;
   margin-top: 15px;
@@ -322,6 +323,7 @@ div.field, div.actions { margin-bottom: 10px; }
 }
 
 input[type=text], input[type=password], select {
+  font-family: 'CabinRegular', Arial, sans-serif;
   font-size: 14px;
   height: 19px;
   width: 250px;

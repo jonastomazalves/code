@@ -250,5 +250,17 @@ textarea {
   border: 1px solid #c4c4c4;
   width: 450px;
 }
-input[type=text], input[type=password], select { font-size: 14px; height: 19px; width: 450px; border: 1px solid #c4c4c4; }
-input[type=submit]{ font-size: 14px; width: auto; }
+
+#footer {
+  height: 60px;
+  width: 960px;
+  margin: 25px auto 0px;
+  color: #000000;
+  text-shadow: 1px 1px 1px #FFFFFF;
+  
+}
+#footer p { font-size: 12px; margin: 0px;}
+#footer a { color: #000000; }
+
+input[type=text], input[type=password], select { font-family: 'CabinRegular', Arial; font-size: 14px; height: 19px; width: 450px; border: 1px solid #c4c4c4; }
+input[type=submit]{ font-family: 'CabinRegular', Arial; font-size: 14px; width: auto; }
