@@ -24,6 +24,7 @@ Oscartes::Application.configure do
   config.action_dispatch.best_standards_support = :builtin
   
   # Paperclip config to use ImageMagick
-  Paperclip.options[:command_path] = "DYLD_LIBRARY_PATH='/etc/imageMagick/ImageMagick-6.6.7/lib' /etc/imageMagick/ImageMagick-6.6.7/bin"
+  # Used to usual path instalation of ImageMagick
+  # Paperclip.options[:command_path] = "DYLD_LIBRARY_PATH='/opt/ImageMagick-6.7.0-3/lib' /opt/ImageMagick-6.7.0-3/bin"
 end
 
