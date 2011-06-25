@@ -62,7 +62,7 @@ class StaticController < ApplicationController
   
   # GET /evento
   def eventos
-    @albuns = Album.find_all_by_tipo("Evento").paginate(:per_page => 3, :page => params[:page], :order => 'updated_at DESC')
+    @albuns = Album.find(:all, :include => :images, :conditions => ["images.album_id IS NOT NULL", "tipo", "Evento"]).paginate(:per_page => 3, :page => params[:page], :order => 'updated_at DESC')
     
     respond_to do |format|
       format.html #eventos.html.erb
