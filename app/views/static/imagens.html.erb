@@ -1,4 +1,8 @@
+<% if @imagens.count != 1 %>
 <div id="slider">
+<% else %>
+<div id="single_slider">
+<% end %>
   <ul>
     <% @imagens.each do |imagem| %>
       <li>

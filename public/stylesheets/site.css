@@ -180,21 +180,21 @@ em {
 }
 #prevBtn a { padding-left: 4px; }
 
-#slider {
+#slider, #single_slider {
   height: 490px;
   width: 955px;
   padding: 0px;
 }
 
-#slider ul { padding-left: 0px; }
+#slider ul, #single_slider ul { padding-left: 0px; }
 
-#slider li {
+#slider li, #single_slider li {
   height: 490px;
   width: 955px;
   list-style-type: none;
 }
 
-#slider h2 {
+#slider h2, #single_slider h2 {
   position: relative;
   height: 45px;
   width: 954px;
@@ -212,6 +212,7 @@ em {
   -ms-filter: "alpha(opacity=66)";
   filter: alpha(opacity=66);
 }
+#single_slider h2 {width: 960px;}
 
 #content {
   margin: 0px auto 0px;
