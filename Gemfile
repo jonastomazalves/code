@@ -1,17 +1,17 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.7'
+gem 'rails', '3.0.9'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2', '0.2.7'
 
-gem "paperclip", "~> 2.3"
+gem "paperclip"
 
 gem "authlogic"
 
-gem "will_paginate", "~> 3.0.pre2"
+gem "will_paginate", '3.0.pre'
 
 # Use unicorn as the web server
 # gem 'unicorn'

@@ -3,10 +3,8 @@
   <%= @news.titulo %>
 </p>
 
-<p>
-  <b>Texto:</b>
-  <%= simple_format(@news.texto) %>
-</p>
+<b>Texto:</b>
+<%= simple_format auto_link @news.texto %>
 
 <p>
   <b>Data:</b>

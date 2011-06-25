@@ -1,7 +1,6 @@
 <h2><%= @news.titulo %></h2>
-<p>
-  <%= auto_link simple_format @news.texto %>
-</p>
+
+<%= simple_format auto_link @news.texto %>
 
 <p>
   <em>Publicado em <%= date_format(@news.data) %></em>
