@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 module ImagesHelper
   def visivel_no_site(visivel)
     if visivel

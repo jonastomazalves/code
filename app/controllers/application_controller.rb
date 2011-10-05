@@ -1,3 +1,5 @@
+#encoding: utf-8
+
 class ApplicationController < ActionController::Base
   protect_from_forgery
   
@@ -8,7 +10,7 @@ class ApplicationController < ActionController::Base
   def authentication
     if UserSession.find.nil?
       respond_to do |format|
-        format.html { redirect_to("/login", :notice => 'You must be logged in') }
+        format.html { redirect_to("/login", :notice => 'Você deve estar logado') }
       end
     end
   end

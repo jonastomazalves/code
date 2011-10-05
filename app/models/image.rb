@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 class Image < ActiveRecord::Base
   validates_presence_of :title, :album, :message => "não pode estar em branco"
   

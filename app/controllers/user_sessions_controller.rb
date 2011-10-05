@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 class UserSessionsController < ApplicationController
 
   before_filter :authentication, :only => [:destroy]

@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 class StaticController < ApplicationController
  # GET /index
   def index
@@ -6,7 +8,7 @@ class StaticController < ApplicationController
     
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => {@imagens, @noticias}  }
+      format.xml  { render :xml => @imagens  }
     end
   end
 

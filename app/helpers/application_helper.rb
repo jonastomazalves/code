@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 module ApplicationHelper
   # Formats dates into latin pattern.
   def date_format(date)

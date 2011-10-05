@@ -11,7 +11,7 @@ Oscartes::Application.configure do
 
   # Show full error reports and disable caching
   config.consider_all_requests_local       = true
-  config.action_view.debug_rjs             = true
+  # config.action_view.debug_rjs             = true
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send
@@ -25,6 +25,6 @@ Oscartes::Application.configure do
   
   # Paperclip config to use ImageMagick
   # Used to usual path instalation of ImageMagick
-  Paperclip.options[:command_path] = "DYLD_LIBRARY_PATH='/opt/ImageMagick-6.6.9/lib' /opt/ImageMagick-6.6.9/bin"
+  # Paperclip.options[:command_path] = "DYLD_LIBRARY_PATH='/opt/ImageMagick-6.6.9/lib' /opt/ImageMagick-6.6.9/bin"
 end
 
