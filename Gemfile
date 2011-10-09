@@ -9,7 +9,7 @@ gem 'rack', '1.3.3'
 
 gem 'mysql2'
 
-gem "paperclip"
+gem "paperclip", '2.4.1'
 
 gem "authlogic"
 
