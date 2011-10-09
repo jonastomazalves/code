@@ -48,5 +48,5 @@ Oscartes::Application.configure do
   config.active_support.deprecation = :notify
   
   # Paperclip config to use ImageMagick
-  Paperclip.options[:command_path] = "DYLD_LIBRARY_PATH='/usr/local/bin/' /usr/local/bin/"
+  # Paperclip.options[:command_path] = "DYLD_LIBRARY_PATH='/usr/local/bin/' /usr/local/bin/"
 end
