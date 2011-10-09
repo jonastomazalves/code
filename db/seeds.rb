@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+# Adds automatically admin account
+    User.create(:username => 'admin', :password => '4dm1n', :password_confirmation => '4dm1n', :created_at => Date.today, :updated_at => Date.today)
